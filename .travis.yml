@@ -1,0 +1,15 @@
+language: cpp
+
+compiler:
+  - gcc
+  - clang
+
+before_script:
+  - wget https://github.com/libgeneprog/libgeneprog/releases/download/v0.1.1/libgeneprog-0.1.1-Linux.deb
+  - sudo dpkg -i libgeneprog-0.1.1-Linux.deb
+  - mkdir build
+  - cd build
+  - cmake ..
+
+script: make
+
