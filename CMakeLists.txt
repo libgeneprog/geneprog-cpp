@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.9)
 project(geneprog-cpp VERSION 0.0.1 DESCRIPTION "Genetic programming library for C++")
 add_library(geneprog-cpp SHARED
 	src/cgpgene.cpp
+	src/bstgene.cpp
 )
 
 # ADD LIBGENEPROG TO PROJECT:
